@@ -109,7 +109,7 @@ prevButtonClick = () => {
          }}/>
       </TransformComponent>
     </TransformWrapper></Page>
-          <Page number={3}><TransformWrapper
+          <Page number={3}><Zoom><TransformWrapper
       initialScale={1}
       initialPositionX={0}
       initialPositionY={0}
@@ -131,8 +131,8 @@ prevButtonClick = () => {
           </TransformComponent>
         </React.Fragment>
       )}
-    </TransformWrapper></Page>
-          <Page number={4}><Quickpinch/> </Page>
+    </TransformWrapper></Zoom></Page>
+          <Page number={4}><Zoom><Quickpinch/> </Zoom></Page>
           <Page number={5}> <Zoom>
       <img
         src={reactLogo} alt="react logo" width="500"
