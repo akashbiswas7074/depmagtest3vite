@@ -2,6 +2,8 @@ import HTMLFlipBook from "react-pageflip";
 import React, { Component,useRef,useCallback, } from "react";
 import reactLogo from "./1.png";
 import "./Cssmag2.css"
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css'
 import {
   TransformWrapper,
   TransformComponent,
@@ -46,13 +48,13 @@ class DemoBook extends React.Component {
 
   
   nextButtonClick = () => {
-    this.flipBook.pageFlip().flipNext()
+    this.flipBook.pageFlip().turnToNextPage()
   };
 
 
 
 prevButtonClick = () => {
-    this.flipBook.pageFlip().flipPrev();
+    this.flipBook.pageFlip().turnToPrevPage();
   };
   onPage = (e) => {
     this.setState({
@@ -84,8 +86,12 @@ prevButtonClick = () => {
           onChangeState={this.onChangeState}
           className="demo-book"
           ref={(el) => (this.flipBook = el)}
-          disableFlipByClick={true}
           
+          clickEventForward={true}
+          showPageCorners={true}
+          useMouseEvents={true}
+    swipeDistance={12}
+    disableFlipByClick={true}
         >
 
           <PageCover>BOOK TITLE</PageCover>
@@ -127,7 +133,11 @@ prevButtonClick = () => {
       )}
     </TransformWrapper></Page>
           <Page number={4}><Quickpinch/> </Page>
-          <Page number={5}></Page>
+          <Page number={5}> <Zoom>
+      <img
+        src={reactLogo} alt="react logo" width="500"
+      />
+    </Zoom></Page>
           <Page number={6}></Page>
           <PageCover>THE END</PageCover>
 
