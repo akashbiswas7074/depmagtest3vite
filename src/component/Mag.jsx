@@ -72,14 +72,14 @@ prevButtonClick = () => {
           height={733}
           size="stretch"
           minWidth={215}
-          maxWidth={1000}
+          maxWidth={900}
           minHeight={400}
           maxHeight={1533}
           maxShadowOpacity={0.5}
           showCover={true}
           mobileScrollSupport={true}
           autoSize={true}
-          usePortrait={true}
+          
           flippingTime={1000}
           onFlip={this.onPage}
           onChangeOrientation={this.onChangeOrientation}
@@ -96,7 +96,17 @@ prevButtonClick = () => {
           <PageCover>BOOK TITLE</PageCover>
           <Page number={1}><Zoom>
       <img
-        src={reactLogo} alt="react logo" width="500"
+        src={reactLogo} alt="react logo" 
+        
+        align-items= "stretch"
+        width="100%"
+	height= "100%"
+	display= "flex"
+	flex-direction= "column"
+	justify-content="space-between"
+	
+          
+         
       />
     </Zoom></Page>
           <Page number={2}> </Page>
