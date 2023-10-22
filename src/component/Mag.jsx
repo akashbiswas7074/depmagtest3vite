@@ -85,8 +85,7 @@ prevButtonClick = () => {
           className="demo-book"
           ref={(el) => (this.flipBook = el)}
           disableFlipByClick={true}
-          clickEventForward={true}
-          showPageCorners={true}
+          
         >
 
           <PageCover>BOOK TITLE</PageCover>
