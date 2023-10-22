@@ -48,7 +48,7 @@ class DemoBook extends React.Component {
 
   
   nextButtonClick = () => {
-    this.flipBook.pageFlip().turnToNextPage()
+    this.flipBook.pageFlip().flipNext()
   };
 
 
@@ -89,55 +89,20 @@ prevButtonClick = () => {
           
           clickEventForward={true}
           showPageCorners={true}
-          useMouseEvents={true}
-    swipeDistance={50}
+          
     disableFlipByClick={true}
         >
 
           <PageCover>BOOK TITLE</PageCover>
-          <Page number={1}><page-image><img  src={reactLogo} alt="react logo"  style={{
-           
-            height: 700,
-            width: 350,
-          }}/></page-image></Page>
-          <Page number={2}> <TransformWrapper>
-      <TransformComponent>
-      <img  src={reactLogo} alt="react logo" style={{
-           
-           height: 700,
-           width: 350,
-         }}/>
-      </TransformComponent>
-    </TransformWrapper></Page>
-          <Page number={3}><Zoom><TransformWrapper
-      initialScale={1}
-      initialPositionX={0}
-      initialPositionY={0}
-    >
-      {({ zoomIn, zoomOut, resetTransform, ...rest }) => (
-        <React.Fragment>
-          <div className="tools">
-            <button onClick={() => zoomIn()}>+</button>
-            <button onClick={() => zoomOut()}>-</button>
-            <button onClick={() => resetTransform()}>x</button>
-          </div>
-          <TransformComponent>
-          <img  src={reactLogo} alt="react logo" style={{
-           
-           height: 700,
-           width: 350,
-         }}/>
-            <div>Example text</div>
-          </TransformComponent>
-        </React.Fragment>
-      )}
-    </TransformWrapper></Zoom></Page>
-          <Page number={4}><Zoom><Quickpinch/> </Zoom></Page>
-          <Page number={5}> <Zoom>
+          <Page number={1}><Zoom>
       <img
         src={reactLogo} alt="react logo" width="500"
       />
     </Zoom></Page>
+          <Page number={2}> </Page>
+          <Page number={3}></Page>
+          <Page number={4}></Page>
+          <Page number={5}></Page>
           <Page number={6}></Page>
           <PageCover>THE END</PageCover>
 
