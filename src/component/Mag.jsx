@@ -84,6 +84,9 @@ prevButtonClick = () => {
           onChangeState={this.onChangeState}
           className="demo-book"
           ref={(el) => (this.flipBook = el)}
+          disableFlipByClick={true}
+          clickEventForward={true}
+          showPageCorners={true}
         >
 
           <PageCover>BOOK TITLE</PageCover>
@@ -138,8 +141,7 @@ prevButtonClick = () => {
               Previous page
             </button>
 
-            [<span>{this.state.page}</span> of
-             <span>{this.state.totalPage}</span>]
+            [<span>{this.state.page}</span> ]
 
             <button type="button" onClick={this.nextButtonClick}>
               Next page
