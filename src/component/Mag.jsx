@@ -90,7 +90,7 @@ prevButtonClick = () => {
           clickEventForward={true}
           showPageCorners={true}
           useMouseEvents={true}
-    swipeDistance={12}
+    swipeDistance={50}
     disableFlipByClick={true}
         >
 
