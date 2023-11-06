@@ -1,0 +1,92 @@
+body {
+	background: linear-gradient(0deg, #000000, #000000, #ffffff, #ffffff);
+	background-size: 400% 400%;
+	animation: gradient 9s ;
+	justify-content: center;
+    align-items: center;
+    
+}
+
+@keyframes gradient {
+	
+	0% {
+		background-position:50% 100% ;
+	}
+    50% {
+		background-position:50% 100% ;
+	}
+    
+	100% {
+		background-position: 50% 0% ;
+	}
+}
+
+.cls-1 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ;
+  }
+
+  .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s  ;
+  }
+
+  .cls-2 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+  }
+
+  .cls-3 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+  }
+
+  .cls-4 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s ease-in-out infinite ;
+  }
+
+  .cls-6 {
+    stroke :#FAFDFD ; 
+    stroke-width :3 ; 
+    fill : #FAFDFD ; 
+    stroke-dasharray : 1800 ; 
+    stroke-dashoffset : 0 ; 
+    animation : show 5s  ;
+  }
+
+ 
+
+
+  @keyframes show { 
+    0% { 
+      fill : transparent ; 
+      stroke-dashoffset : 1800 ; 
+      
+    
+    100% { 
+      fill : #FAFDFD ; 
+      stroke-dashoffset : 0 ;
+      
+    }
+  }

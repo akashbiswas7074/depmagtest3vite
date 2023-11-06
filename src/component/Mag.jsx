@@ -1,5 +1,6 @@
 import HTMLFlipBook from "react-pageflip";
 import React, { Component,useRef,useCallback, } from "react";
+import arrowleft from "./arrow-point-to-right.png";
 import reactLogo from "./1.png";
 import "./Cssmag2.css"
 import Zoom from 'react-medium-image-zoom';
@@ -69,11 +70,11 @@ prevButtonClick = () => {
       <div>
         <HTMLFlipBook
           width={450}
-          height={733}
+          height={743}
           size="stretch"
-          minWidth={215}
+          minWidth={335}
           maxWidth={900}
-          minHeight={400}
+          minHeight={660}
           maxHeight={1533}
           maxShadowOpacity={0.5}
           showCover={true}
@@ -121,14 +122,22 @@ prevButtonClick = () => {
         <div className="container">
           <div>
 
-            <button type="button" onClick={this.prevButtonClick}>
-              Previous page
+            <button type="button" onClick={this.prevButtonClick} style={{
+             backgroundColor: "#E0E0E0",
+            }}>
+            <img src={arrowleft} width = "16" height = "16"  style={{
+              transform: 'rotate(180deg)',
+            }}/>
             </button>
 
             [<span>{this.state.page}</span> ]
 
-            <button type="button" onClick={this.nextButtonClick}>
-              Next page
+            <button type="button" onClick={this.nextButtonClick} style={{
+             backgroundColor: "#E0E0E0",
+            }} >
+            <img src={arrowleft} width = "16" height = "16"  style={{
+              transform: 'rotate(0deg)',
+            }}/>
             </button>
 
           </div>
