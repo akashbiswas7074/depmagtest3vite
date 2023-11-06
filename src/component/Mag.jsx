@@ -5,13 +5,8 @@ import reactLogo from "./1.png";
 import "./Cssmag2.css"
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css'
-import {
-  TransformWrapper,
-  TransformComponent,
-  
-} from "react-zoom-pan-pinch";
 
-import Quickpinch from "./Quickpinch";
+
 
 const PageCover = React.forwardRef((props, ref) => {
   return (
