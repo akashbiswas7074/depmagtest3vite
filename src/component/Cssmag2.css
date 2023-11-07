@@ -1,52 +1,15 @@
-
+/*! CSS Used from: https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css */
+*,
 ::after,
 ::before {
 	box-sizing: border-box;
 }
-h2 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
-}
-button {
-	border-radius: 0;
-}
-button:focus {
-	outline: 1px dotted;
-	outline: 5px auto -webkit-focus-ring-color;
-}
-button {
-	margin: 0;
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-button {
-	overflow: visible;
-}
-button {
-	text-transform: none;
-}
-[type="button"],
-button {
-	-webkit-appearance: button;
-}
-[type="button"]::-moz-focus-inner,
-button::-moz-focus-inner {
-	padding: 0;
-	border-style: none;
-}
-h2 {
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	line-height: 1.2;
-}
-h2 {
-	font-size: 2rem;
-}
+
+
 .container {
 	width: 100%;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding-right: 10px;
+	padding-left: 10px;
 	margin-right: auto;
 	margin-left: auto;
 }
