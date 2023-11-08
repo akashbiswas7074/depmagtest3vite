@@ -1,7 +1,7 @@
 body {
 	background: linear-gradient(0deg, #000000, #000000, #ffffff, #ffffff);
 	background-size: 400% 400%;
-	animation: gradient 9s ;
+	animation: gradient 7s ;
 	justify-content: center;
     align-items: center;
     
@@ -12,12 +12,15 @@ body {
 	0% {
 		background-position:50% 100% ;
 	}
-    50% {
+    70% {
 		background-position:50% 100% ;
+    opacity: 1;
+	
 	}
-    
+ 
 	100% {
 		background-position: 50% 0% ;
+    opacity: 0;
 	}
 }
 
@@ -28,6 +31,7 @@ body {
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s ;
+    opacity: 0;
   }
 
   .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
@@ -37,6 +41,7 @@ body {
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s  ;
+    opacity: 0;
   }
 
   .cls-2 {
@@ -46,15 +51,17 @@ body {
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s ease-in-out infinite ;
+    opacity: 0;
   }
 
   .cls-3 {
-    stroke :#FAFDFD ; 
+    stroke :#000000 ; 
     stroke-width :3 ; 
-    fill : #FAFDFD ; 
+    fill : #000000 ; 
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s ease-in-out infinite ;
+    opacity: 0;
   }
 
   .cls-4 {
@@ -64,6 +71,7 @@ body {
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s ease-in-out infinite ;
+    opacity: 0;
   }
 
   .cls-6 {
@@ -73,6 +81,7 @@ body {
     stroke-dasharray : 1800 ; 
     stroke-dashoffset : 0 ; 
     animation : show 5s  ;
+    opacity: 0;
   }
 
  
@@ -82,11 +91,118 @@ body {
     0% { 
       fill : transparent ; 
       stroke-dashoffset : 1800 ; 
+      opacity: 0;
+    }
+    20% { 
+      fill : transparent ; 
+      stroke-dashoffset : 1800 ; 
+      opacity: 1;
+    }
+    90% { 
+      fill : #FAFDFD ; 
+      stroke-dashoffset : 0 ;
+      opacity: 1;
       
     }
     100% { 
       fill : #FAFDFD ; 
       stroke-dashoffset : 0 ;
-      
+      opacity: 0;
     }
+  }
+
+
+  
+  
+  .App {
+    font-family: sans-serif;
+    text-align: center;
+    
+   top: -500px;
+  }
+  .textScramble {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px;
+    font-family: "Roboto Mono", monospace;
+    font-size: 15px;
+    padding: 10px 10px;
+   
+  }
+  .top1
+  {
+    top: -500px;
+  }
+
+  .textanime p {
+    color: #fff;
+    font-family: "Roboto Mono";
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+     /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 5.0s ,
+      blink-caret .5s ;
+      opacity: 0;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+     
+    20%{
+      opacity: 0;
+  }
+  90%{
+      opacity: 1;
+  }
+  100%{
+      opacity: 0;
+  }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    
+       
+      20%{
+          opacity: 0;
+      }
+      90%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+      }
+  
+  }
+  .Prisma
+  {
+    justify-content: center;
+    align-items: center;
+    position: center;
+   
+  }
+  .logo{
+    animation: logo 5s ;
+opacity: 0;
+  }
+  @keyframes logo {
+    
+    
+       
+      20%{
+          opacity: 0;
+      }
+      90%{
+          opacity: 1;
+      }
+      100%{
+          opacity: 0;
+      }
+  
   }

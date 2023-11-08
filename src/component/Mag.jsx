@@ -1,12 +1,16 @@
 import HTMLFlipBook from "react-pageflip";
 import React, { Component,useRef,useCallback, } from "react";
-import arrowleft from "./arrow-point-to-right.png";
 import reactLogo from "./1.png";
 import "./Cssmag2.css"
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css'
-
-
+import {
+  TransformWrapper,
+  TransformComponent,
+  
+} from "react-zoom-pan-pinch";
+import arrow from "./arrow.png";
+import Quickpinch from "./Quickpinch";
 
 const PageCover = React.forwardRef((props, ref) => {
   return (
@@ -65,11 +69,11 @@ prevButtonClick = () => {
       <div>
         <HTMLFlipBook
           width={450}
-          height={743}
+          height={773}
           size="stretch"
-          minWidth={335}
+          minWidth={355}
           maxWidth={900}
-          minHeight={660}
+          minHeight={550}
           maxHeight={1533}
           maxShadowOpacity={0.5}
           showCover={true}
@@ -118,21 +122,19 @@ prevButtonClick = () => {
           <div>
 
             <button type="button" onClick={this.prevButtonClick} style={{
-             backgroundColor: "#E0E0E0",
+              left: '-450%',
             }}>
-            <img src={arrowleft} width = "16" height = "16"  style={{
-              transform: 'rotate(180deg)',
-            }}/>
+              <img src={arrow} width={"20px"} style={{
+              
+              position: "center",   rotate: "180deg", }}/>
             </button>
 
             [<span>{this.state.page}</span> ]
 
-            <button type="button" onClick={this.nextButtonClick} style={{
-             backgroundColor: "#E0E0E0",
-            }} >
-            <img src={arrowleft} width = "16" height = "16"  style={{
-              transform: 'rotate(0deg)',
-            }}/>
+            <button type="button" onClick={this.nextButtonClick}>
+             <img src={arrow} width={"20px"} style={{
+              
+          position: "center",  }}/>
             </button>
 
           </div>
