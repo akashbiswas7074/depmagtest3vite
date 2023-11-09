@@ -61,7 +61,7 @@ position: 'center',
      }}>
 <div className='top1'></div>
 <div><div class="textanime">
-<p>department magazine</p>
+<p>Departmental Magazine</p>
 </div></div>
 <div class="textanime">
 <p>by</p>

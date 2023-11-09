@@ -1,7 +1,7 @@
 body {
 	background: linear-gradient(0deg, #000000, #000000, #ffffff, #ffffff);
 	background-size: 400% 400%;
-	animation: gradient 7s ;
+	animation: gradient 6.5s ;
 	justify-content: center;
     align-items: center;
     
@@ -169,15 +169,7 @@ body {
     from, to { border-color: transparent }
     
        
-      20%{
-          opacity: 0;
-      }
-      90%{
-          opacity: 1;
-      }
-      100%{
-          opacity: 0;
-      }
+   
   
   }
   .Prisma
