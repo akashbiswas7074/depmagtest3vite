@@ -1,5 +1,6 @@
 import HTMLFlipBook from "react-pageflip";
 import React, { Component,useRef,useCallback, } from "react";
+import back from "./back1.png";
 import reactLogo from "./1.png";
 import poem1 from "./poemsnew/poem1.png";
 import poem2 from "./poemsnew/poem2.png";
@@ -149,7 +150,21 @@ prevButtonClick = () => {
     disableFlipByClick={true}
         >
 
-          <PageCover>BOOK TITLE</PageCover>
+          <PageCover><Zoom>
+      <img
+        src={back} alt="react logo" 
+        
+        align-items= "stretch"
+        width="100%"
+	height= "100%"
+	display= "flex"
+	flex-direction= "column"
+	justify-content="space-between"
+	
+          
+         
+      />
+    </Zoom></PageCover>
           <Page number={1}><Zoom>
       <img
         src={reactLogo} alt="react logo" 
@@ -560,6 +575,7 @@ prevButtonClick = () => {
     </Zoom></Page>
 
   {/*Technical Essays23*/}
+  
           <Page number={6}><Zoom>
       <img
         src={shortstory15} alt="react logo" 
