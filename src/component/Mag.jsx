@@ -88,7 +88,7 @@ const Page = React.forwardRef((props, ref) => {
         
         <div className="page-text">{props.children}</div>
         <div className="page-footer">{props.number + 1}</div>
-        <h2 className="page-header">Page header - {props.number}</h2>
+        
       </div>
     </div>
   );
@@ -138,7 +138,7 @@ prevButtonClick = () => {
           mobileScrollSupport={true}
           autoSize={true}
           
-          flippingTime={980}
+          flippingTime={960}
           onFlip={this.onPage}
           onChangeOrientation={this.onChangeOrientation}
           onChangeState={this.onChangeState}
@@ -156,8 +156,8 @@ prevButtonClick = () => {
         src={back} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="100%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"
@@ -185,25 +185,26 @@ prevButtonClick = () => {
     </Zoom></Page>
           {/*poem*/}
           <Page number={2} src={poem1} alt="react logo"  > <Zoom>
-      <img
+   <div>  <img
         src={poem1} alt="react logo" 
         
         align-items= "stretch"
 
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
-	justify-content="space-between"   
+	justify-content="space-between" 
+  
          
-      />
+      /></div> 
     </Zoom></Page>
           <Page number={3}><Zoom>
       <img
         src={poem2} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
+        width="96%"
 	height= "90%"
 	display= "flex"
 	flex-direction= "column"
@@ -216,7 +217,7 @@ prevButtonClick = () => {
         src={poem3} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
+        width="96%"
 
 	display= "flex"
 	flex-direction= "column"
@@ -229,8 +230,8 @@ prevButtonClick = () => {
         src={poem4} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -242,8 +243,8 @@ prevButtonClick = () => {
         src={poem5} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -255,8 +256,8 @@ prevButtonClick = () => {
         src={poem6} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -268,8 +269,8 @@ prevButtonClick = () => {
         src={poem7} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -281,8 +282,8 @@ prevButtonClick = () => {
         src={poem8} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -294,8 +295,8 @@ prevButtonClick = () => {
         src={poem9} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -307,8 +308,8 @@ prevButtonClick = () => {
         src={poem10} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -320,8 +321,8 @@ prevButtonClick = () => {
         src={poem11} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -333,8 +334,8 @@ prevButtonClick = () => {
         src={poem12} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -346,8 +347,8 @@ prevButtonClick = () => {
         src={poem13} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -359,8 +360,8 @@ prevButtonClick = () => {
         src={poem14} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -372,8 +373,8 @@ prevButtonClick = () => {
         src={poem15} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -385,8 +386,8 @@ prevButtonClick = () => {
         src={poem16} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -400,8 +401,8 @@ prevButtonClick = () => {
         src={shortstory1} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -413,8 +414,8 @@ prevButtonClick = () => {
         src={shortstory2} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -426,8 +427,8 @@ prevButtonClick = () => {
         src={shortstory3} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -439,8 +440,8 @@ prevButtonClick = () => {
         src={shortstory4} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -452,8 +453,8 @@ prevButtonClick = () => {
         src={shortstory5} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -465,8 +466,8 @@ prevButtonClick = () => {
         src={shortstory6} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -478,8 +479,8 @@ prevButtonClick = () => {
         src={shortstory7} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -491,8 +492,8 @@ prevButtonClick = () => {
         src={shortstory8} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -504,8 +505,8 @@ prevButtonClick = () => {
         src={shortstory9} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -517,8 +518,8 @@ prevButtonClick = () => {
         src={shortstory10} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -530,8 +531,8 @@ prevButtonClick = () => {
         src={shortstory11} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -543,8 +544,8 @@ prevButtonClick = () => {
         src={shortstory12} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -556,8 +557,8 @@ prevButtonClick = () => {
         src={shortstory13} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -569,8 +570,8 @@ prevButtonClick = () => {
         src={shortstory14} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -585,8 +586,8 @@ prevButtonClick = () => {
         src={shortstory15} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -598,8 +599,8 @@ prevButtonClick = () => {
         src={technical1} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -611,8 +612,8 @@ prevButtonClick = () => {
         src={technical2} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -624,8 +625,8 @@ prevButtonClick = () => {
         src={technical3} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -637,8 +638,8 @@ prevButtonClick = () => {
         src={technical4} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -650,8 +651,8 @@ prevButtonClick = () => {
         src={technical5} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -663,8 +664,8 @@ prevButtonClick = () => {
         src={technical6} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -676,8 +677,8 @@ prevButtonClick = () => {
         src={technical7} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -689,8 +690,8 @@ prevButtonClick = () => {
         src={technical8} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -702,8 +703,8 @@ prevButtonClick = () => {
         src={technical9} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -715,8 +716,8 @@ prevButtonClick = () => {
         src={technical10} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -728,8 +729,8 @@ prevButtonClick = () => {
         src={technical11} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -741,8 +742,8 @@ prevButtonClick = () => {
         src={technical12} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -754,8 +755,8 @@ prevButtonClick = () => {
         src={technical13} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -767,8 +768,8 @@ prevButtonClick = () => {
         src={technical14} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -780,8 +781,8 @@ prevButtonClick = () => {
         src={technical15} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -793,8 +794,8 @@ prevButtonClick = () => {
         src={technical16} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -806,8 +807,8 @@ prevButtonClick = () => {
         src={technical17} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -819,8 +820,8 @@ prevButtonClick = () => {
         src={technical18} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -832,8 +833,8 @@ prevButtonClick = () => {
         src={technical19} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -845,8 +846,8 @@ prevButtonClick = () => {
         src={technical20} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -858,8 +859,8 @@ prevButtonClick = () => {
         src={technical21} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -871,8 +872,8 @@ prevButtonClick = () => {
         src={technical22} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -884,8 +885,8 @@ prevButtonClick = () => {
         src={technical23} alt="react logo" 
         
         align-items= "stretch"
-        width="98%"
-	height= "98%"
+        width="96%"
+	height= "96%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
