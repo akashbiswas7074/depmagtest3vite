@@ -88,6 +88,7 @@ const Page = React.forwardRef((props, ref) => {
         
         <div className="page-text">{props.children}</div>
         <div className="page-footer">{props.number + 1}</div>
+        <h2 className="page-header">Page header - {props.number}</h2>
       </div>
     </div>
   );
@@ -137,7 +138,7 @@ prevButtonClick = () => {
           mobileScrollSupport={true}
           autoSize={true}
           
-          flippingTime={1000}
+          flippingTime={980}
           onFlip={this.onPage}
           onChangeOrientation={this.onChangeOrientation}
           onChangeState={this.onChangeState}
@@ -155,8 +156,8 @@ prevButtonClick = () => {
         src={back} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"
@@ -168,10 +169,12 @@ prevButtonClick = () => {
           <Page number={1}><Zoom>
       <img
         src={reactLogo} alt="react logo" 
+        top={"50%"}
+        align-items= "center"
+        position={"absolute"}
+        width="97%"
         
-        align-items= "stretch"
-        width="100%"
-	height= "100%"
+	
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"
@@ -181,13 +184,14 @@ prevButtonClick = () => {
       />
     </Zoom></Page>
           {/*poem*/}
-          <Page number={2}> <Zoom>
+          <Page number={2} src={poem1} alt="react logo"  > <Zoom>
       <img
         src={poem1} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -199,8 +203,8 @@ prevButtonClick = () => {
         src={poem2} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "90%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -212,8 +216,8 @@ prevButtonClick = () => {
         src={poem3} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -225,8 +229,8 @@ prevButtonClick = () => {
         src={poem4} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -238,151 +242,151 @@ prevButtonClick = () => {
         src={poem5} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={7}><Zoom>
       <img
         src={poem6} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={8}><Zoom>
       <img
         src={poem7} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={9}><Zoom>
       <img
         src={poem8} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={10}><Zoom>
       <img
         src={poem9} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={11}><Zoom>
       <img
         src={poem10} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={12}><Zoom>
       <img
         src={poem11} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={13}><Zoom>
       <img
         src={poem12} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={14}><Zoom>
       <img
         src={poem13} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={15}><Zoom>
       <img
         src={poem14} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={16}><Zoom>
       <img
         src={poem15} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={17}><Zoom>
       <img
         src={poem16} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -391,182 +395,182 @@ prevButtonClick = () => {
     </Zoom></Page>
 {/*shortstory*/}
 
-          <Page number={6}><Zoom>
+          <Page number={18}><Zoom>
       <img
         src={shortstory1} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={19}><Zoom>
       <img
         src={shortstory2} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={20}><Zoom>
       <img
         src={shortstory3} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={21}><Zoom>
       <img
         src={shortstory4} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={22}><Zoom>
       <img
         src={shortstory5} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={23}><Zoom>
       <img
         src={shortstory6} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={24}><Zoom>
       <img
         src={shortstory7} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={26}><Zoom>
       <img
         src={shortstory8} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={27}><Zoom>
       <img
         src={shortstory9} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={28}><Zoom>
       <img
         src={shortstory10} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={29}><Zoom>
       <img
         src={shortstory11} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={30}><Zoom>
       <img
         src={shortstory12} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={31}><Zoom>
       <img
         src={shortstory13} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={32}><Zoom>
       <img
         src={shortstory14} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
@@ -576,312 +580,312 @@ prevButtonClick = () => {
 
   {/*Technical Essays23*/}
   
-          <Page number={6}><Zoom>
+          <Page number={33}><Zoom>
       <img
         src={shortstory15} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={34}><Zoom>
       <img
         src={technical1} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={35}><Zoom>
       <img
         src={technical2} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={36}><Zoom>
       <img
         src={technical3} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={37}><Zoom>
       <img
         src={technical4} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={38}><Zoom>
       <img
         src={technical5} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={39}><Zoom>
       <img
         src={technical6} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={39}><Zoom>
       <img
         src={technical7} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={40}><Zoom>
       <img
         src={technical8} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={41}><Zoom>
       <img
         src={technical9} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={42}><Zoom>
       <img
         src={technical10} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={43}><Zoom>
       <img
         src={technical11} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={44}><Zoom>
       <img
         src={technical12} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={45}><Zoom>
       <img
         src={technical13} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={46}><Zoom>
       <img
         src={technical14} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={47}><Zoom>
       <img
         src={technical15} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={48}><Zoom>
       <img
         src={technical16} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={49}><Zoom>
       <img
         src={technical17} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={50}><Zoom>
       <img
         src={technical18} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={51}><Zoom>
       <img
         src={technical19} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={52}><Zoom>
       <img
         src={technical20} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={53}><Zoom>
       <img
         src={technical21} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={54}><Zoom>
       <img
         src={technical22} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   
          
       />
     </Zoom></Page>
-          <Page number={6}><Zoom>
+          <Page number={55}><Zoom>
       <img
         src={technical23} alt="react logo" 
         
         align-items= "stretch"
-        width="100%"
-	height= "100%"
+        width="98%"
+	height= "98%"
 	display= "flex"
 	flex-direction= "column"
 	justify-content="space-between"   

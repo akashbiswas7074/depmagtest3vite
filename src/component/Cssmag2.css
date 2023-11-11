@@ -5,8 +5,8 @@
 	box-sizing: border-box;
 }
 h2 {
-	margin-top: 0;
-	margin-bottom: 0.5rem;
+	margin-top: 0%;
+	margin-bottom: 0rem;
 }
 button {
 	border-radius: 0;
@@ -41,12 +41,11 @@ button::-moz-focus-inner {
 	border-style: none;
 }
 h2 {
-	margin-bottom: 0.5rem;
-	font-weight: 500;
-	line-height: 1.2;
+	margin-bottom: 0rem;
+	
 }
 h2 {
-	font-size: 2rem;
+	font-size: 0.0rem;
 }
 .container {
 	width: 100%;
@@ -235,19 +234,19 @@ h2 {
 	overflow: hidden !important;
 }
 .mb-2 {
-	margin-bottom: 0.5rem !important;
+	margin-bottom: 0rem !important;
 }
 .mt-3 {
-	margin-top: 1rem !important;
+	margin-top: 0rem !important;
 }
 .mb-3 {
-	margin-bottom: 1rem !important;
+	margin-bottom: 0rem !important;
 }
 .pt-3 {
-	padding-top: 1rem !important;
+	padding-top: 0rem !important;
 }
 .pb-3 {
-	padding-bottom: 1rem !important;
+	padding-bottom: 0rem !important;
 }
 .text-center {
 	text-align: center !important;
@@ -309,16 +308,7 @@ h2 {
 	background-repeat: no-repeat;
 	scale: 0.1;
 }
-.page .page-content .page-text {
-	height: 100%;
-	flex-grow: 1;
-	font-size: 80%;
-	text-align: justify;
-	margin-top: 10px;
-	padding-top: 10px;
-	box-sizing: border-box;
-	border-top: solid 1px #f4e8d7;
-}
+
 .page .page-content .page-footer {
 	height: 30px;
 	border-top: solid 1px #f4e8d7;
@@ -381,3 +371,4 @@ h2 {
   outline-offset: 0.4rem;
   outline: 0.2rem solid #bd93f9;
 }
+
